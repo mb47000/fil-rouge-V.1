@@ -44,6 +44,12 @@ header {
  width: 45%;
  
 }
+
+.inscription{
+    text-align: center;
+    padding: 0, 10px;
+    height: 10vh;
+}
 #logo-img{
     width: 100%;
     height: auto;
@@ -91,3 +97,18 @@ footer{
     align-items: center;
     justify-content: center;
 }
+/* Fenetre modal inscription stagiaire #056bb3 */
+.modal-content{
+    background: #2682c4 ;
+    color: #74bbe4;
+    text-align: center;
+    max-width: 320px;
+}
+input{
+    border-radius: 12px;
+}
+#Insct°stg{
+    background-color: #74bbe4;
+    border-color: #74bbe4;
+}
+
