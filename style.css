@@ -98,11 +98,33 @@ footer{
     justify-content: center;
 }
 /* Fenetre modal inscription stagiaire #056bb3 */
-.modal-content{
+.modalstg{
     background: #2682c4 ;
     color: #74bbe4;
     text-align: center;
-    max-width: 320px;
+    max-width: 520px;
+    
+}
+.modal-ent{
+    background: #2682c4 ;
+    color: #74bbe4;
+    text-align: center;
+    max-width: 520px;
+    
+}
+div.modalstg{
+    margin-left: auto;
+    margin-right: auto; 
+    
+    width: 520px;
+    
+}
+div.modal-ent{
+    margin-left: auto;
+    margin-right: auto; 
+    
+    width: 520px;
+    
 }
 input{
     border-radius: 12px;

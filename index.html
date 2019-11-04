@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Stage 47</title>
@@ -19,8 +20,8 @@
                 <div id="inscription-connection">
 
 
-                    <div id="modal-stagiaire" class="inscription"><a id="rr">Inscription Candidat</a></div>
-                    <div class="inscription"><a href="">Inscription Entreprise</a></div>
+                    <div id="modal-stagiaire" class="inscription"><a>Inscription Candidat</a></div>
+                    <div id="modal-entreprise" class="inscription"><a>Inscription Entreprise</a></div>
                     <div class="inscription" id="connection"><a href="">Connection</a></div>
                 </div>
             </div>
@@ -62,7 +63,7 @@
         <div id="myModal" class="modal">
 
             <!-- Modal content -->
-            <div class="modal-content">
+            <div class="modalstg">
 
                 <div>
                     <div>
@@ -96,25 +97,75 @@
 
         </div>
 
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
+        <div id="myModal1" class="modal">
 
-            // Get the button that opens the modal
+                
+                <div class="modal-ent">
+    
+                    <div>
+                        <div>
+                            <p> Numéro d'adhérent :</p>
+                            <input type="text" id="Nadherent" name="Nadherent">
+                        </div>
+                        <div>
+                            <p> Nom :</p>
+                            <input type="text" id="Nom" name="Nom">
+                        </div>
+                        <div>
+                            <p> Prénom :</p>
+                            <input type="text" id="prenom" name="prenom">
+                        </div>
+                        <div>
+                            <p> adresse mail :</p>
+                            <input type="email" id="@mail" name="@mail">
+                        </div>
+                        <div>
+                            <p> Mot de passe :</p>
+                            <input type="password" id="MDP" name="MDP">
+                        </div>
+                        <div>
+                            <p>Confirmation mot de passe :</p>
+                            <input type="password" id="MDP1" name="MDP1">
+                        </div><br>
+                        <input type="button" id="Insct°stg" value="Inscription">
+                    </div>
+    
+                </div>
+    
+            </div> 
+
+        <script>
+            
+            var modal = document.getElementById("myModal");
+            var modal1 = document.getElementById("myModal1");
+
+            
             var btn = document.getElementById("modal-stagiaire");
-            // When the user clicks the button, open the modal 
+            var btn1 = document.getElementById("modal-entreprise");
+             
             btn.onclick = function () {
                 modal.style.display = "block";
             }
-            // When the user clicks anywhere outside of the modal, close it
+            btn1.onclick = function () {
+                modal1.style.display = "block";
+            }
+            
             window.onclick = function (event) {
                 if (event.target == modal) {
                     modal.style.display = "none";
                 }
             }
+            window.onclick = function (event) {
+                if (event.target == modal1) {
+                    modal1.style.display = "none";
+                }
+            }
 
             $('#modal-stagiaire').click(function () {
-                $('#modal-content').toggle();
+                $('#modalstg').toggle();  /*  ?Normalement .modalstg car class mais ne marche pas alor qu'avec le # ça marche  ==> vérifier avec mathieu*/
+            });
+            $('#modal-entreprise').click(function () {
+                $('#modal-ent').toggle();
             });
 
         </script>
