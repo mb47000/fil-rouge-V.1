@@ -37,10 +37,10 @@ header {
     width: 30%;
     text-align: right;
     align-items: center;
-    margin-left: 60%;
+    margin-left: 45.26%;
     
 }
-#inscription,#connection{
+.inscription,#connection{
  width: 45%;
  
 }
