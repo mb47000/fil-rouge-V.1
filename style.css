@@ -1,0 +1,16 @@
+* {
+    padding:0;
+    margin: 0;
+}
+header {
+    position: relative;
+}
+#main-menu {
+    height: 200px;
+    background-color: blue;
+}
+#logo-title {
+    height: 200px;
+    width: 5%;
+    border: solid 1px black;
+}
