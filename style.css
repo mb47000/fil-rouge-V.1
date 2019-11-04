@@ -52,12 +52,13 @@ header {
 #block-1 {
     display: flex;
     flex-direction: row;
-    margin-top: 5%;
+    padding-top: 5vh;
     justify-content: space-between;
+    height: 80vh;
 }
 #under-block-1-1 {
     width: 42.5%;
-    height: 600px;
+    height: 70vh;
     background-color: #74bbe4;
     margin-left: 5%;
     display: flex;
@@ -65,7 +66,7 @@ header {
 }
 #under-block-1-2 {
     width: 42.5%;
-    height: 600px;
+    height: 70vh;
     background-color: #74bbe4;
     margin-right: 5%;
 }
@@ -73,19 +74,20 @@ header {
 .title-under-block-1{
     text-align: center;
     margin-top: 3%;
+    height: 5% ;
 }
 .actu-under-block{
     width: 80%;
-    height: 120px;
+    height: 28%;
     background-color: #F1F2F6;
     margin-left: 10%;
     margin-top:5%;
 }
 /*Footer*/
 footer{
-    margin-top: 3%;
+    /* margin-top: 3%; */
     widows: 100%;
-    height: 77px;
+    height: 10vh;
     background-color: #74bbe4;
     display: flex;
     align-items: center;
