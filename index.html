@@ -62,7 +62,7 @@
 
         <div id="myModal" class="modal">
 
-            <!-- Modal content -->
+            <!-- Modal stagiaire -->
             <div class="modalstg">
 
                 <div>
@@ -105,27 +105,27 @@
                     <div>
                         <div>
                             <p> Nom Entreprise :</p>
-                            <input type="text" id="Nadherent" name="Nadherent">
+                            <input type="text" id="Noment" name="Noment">
                         </div>
                         <div>
                             <p> Nom :</p>
-                            <input type="text" id="Nom" name="Nom">
+                            <input type="text" id="Nomgerant" name="Nomgerant">
                         </div>
                         <div>
                             <p> Prénom :</p>
-                            <input type="text" id="prenom" name="prenom">
+                            <input type="text" id="prenomgerant" name="prenomgerant">
                         </div>
                         <div>
                             <p> adresse mail :</p>
-                            <input type="email" id="@mail" name="@mail">
+                            <input type="email" id="@mailgerant" name="@mailgerant">
                         </div>
                         <div>
                             <p> Mot de passe :</p>
-                            <input type="password" id="MDP" name="MDP">
+                            <input type="password" id="MDPgerant" name="MDPgerant">
                         </div>
                         <div>
                             <p>Confirmation mot de passe :</p>
-                            <input type="password" id="MDP1" name="MDP1">
+                            <input type="password" id="MDP1gerant" name="MDP1gerant">
                         </div><br>
                         <input type="button" id="Insct°stg" value="Inscription">
                     </div>
@@ -137,33 +137,30 @@
         <script>
             
             var modal = document.getElementById("myModal");
-            var modal1 = document.getElementById("myModal1");
-
-            
             var btn = document.getElementById("modal-stagiaire");
-            var btn1 = document.getElementById("modal-entreprise");
-             
             btn.onclick = function () {
                 modal.style.display = "block";
             }
-            btn1.onclick = function () {
-                modal1.style.display = "block";
-            }
-            
             window.onclick = function (event) {
                 if (event.target == modal) {
                     modal.style.display = "none";
                 }
+            }
+            $('#modal-stagiaire').click(function () {
+                $('#modalstg').toggle();  /*  ?Normalement .modalstg car class mais ne marche pas alor qu'avec le # ça marche  ==> vérifier avec mathieu*/
+            });
+
+// bt2
+            var modal1 = document.getElementById("myModal1");
+            var btn1 = document.getElementById("modal-entreprise");
+            btn1.onclick = function () {
+                modal1.style.display = "block";
             }
             window.onclick = function (event) {
                 if (event.target == modal1) {
                     modal1.style.display = "none";
                 }
             }
-
-            $('#modal-stagiaire').click(function () {
-                $('#modalstg').toggle();  /*  ?Normalement .modalstg car class mais ne marche pas alor qu'avec le # ça marche  ==> vérifier avec mathieu*/
-            });
             $('#modal-entreprise').click(function () {
                 $('#modal-ent').toggle();
             });
